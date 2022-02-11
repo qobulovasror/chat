@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat</title>
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/col.css">
+	<link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+	<div class="box-chat column">
+		<div class="user-info row">
+			<a href="#" class="btn"><i class="bx bxs-left-arrow-alt"></i></a>
+			<img src="img/user.svg" alt="user img">
+			<div class="column">
+				<h3 class="user">User 1</h3>
+				<div class="status">Active now</div>
+			</div>
+		</div>
+		<div class="chat-win">
+			<div class="chat out">
+				<div class="details">
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="chat in row">
+				<img src="img/user.svg" alt="img">
+				<div class="details">
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			
+		</div>
+		<form action="" class="mess row between">
+			<input type="text" placeholder="Message ...">
+			<input type="submit" value="Yuborish">
+		</form>
+	</div>
+	<script>
+		let input = document.querySelector('.mess input[type="text"]');
+		input.addEventListener('keyup',()=>{
+			if(input.value.length > 28 ){
+				input.style.height = '70px';
+			}e
+		})
+	</script>
+</body>
+</html>

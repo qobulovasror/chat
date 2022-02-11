@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | Login In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/col.css">
+    <link rel="stylesheet" href="css/regs.css">
+</head>
+<body>
+    <div class="box login"> 
+        <h3>Login In</h3>
+        <hr>
+        <div id="error">This is an error message</div>
+        <form action="">
+            <label for="email">Email Address
+                <input type="email" placeholder="Enter you email">
+            </label>
+
+            <label for="pass">Password
+                <input type="password" id="pass" placeholder="Enter you password">
+                <i class="far fa-eye" id="passEye"></i>
+            </label>
+
+            <input type="submit" value="Continue to Chat">
+
+            <div class="link">Not yet sindnet up? <a href="regs.html">Singmn now</a></div>
+        </form>
+    </div>
+
+    <script>
+        let passEye = document.getElementById('passEye'),
+			pass = document.getElementById('pass');
+
+		passEye.addEventListener('click',()=>{
+			if(pass.type == "password"){
+				pass.type = "text";
+				passEye.classList.add('unEye');
+			}else{
+				pass.type = "password";
+				passEye.classList.remove('unEye');
+			}
+		})
+    </script>
+</body>
+</html>
